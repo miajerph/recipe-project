@@ -5,7 +5,7 @@
 **Website Link**: [Nutritional Analysis](https://miajerph.github.io/recipe-project/)
 
 
-## Step 1: Introduction
+## Introduction
 
 If you have ever been a college student, you know just how much unhealthy food we consume on a daily basis. Without the help from our parents, we struggle with eating healthy food. We crave quick and tasty meals in order to get through our busy schedules, sleepless nights, and hours of homework. But, does it have to be this way? What if we could eat healthy _and_ yummy food? 
 
@@ -38,7 +38,7 @@ The second dataset is called `interactions`. It has 73,1927 rows and 5 columns.
 | 'ratingt'| Rating given |
 | 'review' | Review text |
 
-## Step 2: Data Cleaning and Exploratory Data Analysis
+## Data Cleaning and Exploratory Data Analysis
 
 #### Data Cleaning
 
@@ -161,11 +161,11 @@ $H_a$: There is a difference between the population mean rating of protein-fulfi
 
 Absolute value of the difference between the mean rating for protein-fulfilling and non-protein fulfilling recipes
 
-$|\mu_{protein PDV >= 100} - \mu_{protein PDV < 100}|$
+`\mu_{protein PDV >= 100} - \mu_{protein PDV < 100}`
 
 #### Significance Level
 
-$\alpha=0.05$ 
+`$\alpha=0.05$`
 
 To test our hypothesis, we run a permutation test to see if under the null (which is simulated through shuffling the `fulfills_protein_DV` column), whether the observed absolute mean difference is unlikely to occur under the null, ergo, is there statistically significant evidence in favor of the alternate hypothesis. The observed absolute mean difference between the two groups in the dataset is approximately 0.0031266. 
 
