@@ -180,3 +180,6 @@ At the time of prediction, we should have access to the nutritional content and 
 
 For the baseline model, we want to look at `calories (#)`, `sugar (PDV)`,  and `carbohydrates (PDV)`.  These feautures are all continuous and quantitative. 
 
+<iframe src="assets/fig_5.html" width="800" height="600" frameborder="0"></iframe>
+
+<iframe src="assets/fig_6.html" width="800" height="600" frameborder="0"></iframe>
