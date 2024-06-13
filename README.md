@@ -1,6 +1,6 @@
 # An Investigation into Nutrition vs Yummy: How Does Nutritional Content Impact the Average Rating of a Recipe?
 
-**Name(s)**: Mia Jerphagnon, Alyssa
+**Name(s)**: Mia Jerphagnon, Alyssa Tallada
 
 **Website Link**: [Nutritional Analysis](https://miajerph.github.io/recipe-project/)
 
