@@ -193,7 +193,7 @@ For our predictive model, we plan on predicting the average rating of a recipe u
 
 We hope to use variables related to nutritional content (e.g. sugar, calories) as predictors of average rating. We initially hoped to use protein as a predictor, but our previous analyses show that there might not be such a strong correlation between protein and average rating. Thus, we will include protein in the model, but might not weight it heavily compared to other variables in the regression. 
 
-We will evaluate our model using the $R^2$ score and root mean squared error. The $R^2$ score shows the variance in average rating that is predictable from the predictor variables, and thus helps us understand how well our model's predictions match the data. The root mean squared error measures the average magnitude of the errors in our model's predictions and will help us understand the accuracy of our model. We will not use other scores such as F1 because they work better for classification.
+We will evaluate our model using the R2 score and root mean squared error. The R2 score shows the variance in average rating that is predictable from the predictor variables, and thus helps us understand how well our model's predictions match the data. The root mean squared error measures the average magnitude of the errors in our model's predictions and will help us understand the accuracy of our model. We will not use other scores such as F1 because they work better for classification.
 
 At the time of prediction, we should have access to the nutritional content and all the other features in the rating dataset as described in the Introduction section. These features are related to the recipe and do not include data on users' opinions on the recipe.
 
@@ -209,7 +209,7 @@ Based on the figures, it might be a good idea to try a logarithmic regression on
 
 Our model is thus a combination of linear regression model on carbohydrates and sugar and a logarithm regression on calories. 
 
-Based on the high root mean squared error (0.6403) and a $R^2$ score of almost 0 (0.00029), our baseline model performed extremely poorly. The low $R^2$ indicates that our predictors have low explanatory power. The high RMSE indicates a high error and inaccuracy. We must change the model completely going forward.
+Based on the high root mean squared error (0.6403) and a R2 score of almost 0 (0.00029), our baseline model performed extremely poorly. The low R2 indicates that our predictors have low explanatory power. The high RMSE indicates a high error and inaccuracy. We must change the model completely going forward.
 
 ## Final Model
 
@@ -233,17 +233,17 @@ This feature represents the cooking time of a recipe in minutes. We hypothesize 
 
 We used DecisionTreeRegressor for our modeling algorithm and used GridSearchCV to tune the hyperparameters of max_depth and max_features of the DecisionTreeRegressor. Decision trees are prone to high variance, and the hyperparameter max_depth helps control the variance and avoid overfitting. The best hyperparameters we found was 10 for the max_depth and 'sqrt' for max features.
 
-The RMSE of the final model is 0.6319, which is a slight decrease from the RMSE of the baseline model. Additionally, the $R^2$ score increased as well by approximately 0.02605. Our model still needs a lot of work, but it at least improved. 
+The RMSE of the final model is 0.6319, which is a slight decrease from the RMSE of the baseline model. Additionally, the R2 score increased as well by approximately 0.02605. Our model still needs a lot of work, but it at least improved. 
 
 ## Fairness Analysis
 
 For our fairness analysis, we want to split the recipes by sugar (PDV). Recipes with sugar (PDV) >= 23 (the median) will be designated as high in sugar, while recipes with sugar (PDV) < 23 will be designated as low in sugar. We used the median as the threshold instead of the mean because the median is less sensitive to outliers. 
 
-We want to use the $R^2$ score to analyze fairness to understand how the explanatory power of the sugar variable might change between the two groups. 
+We want to use the R2 score to analyze fairness to understand how the explanatory power of the sugar variable might change between the two groups. 
 
-Null Hypothesis: Our model is fair. Its $R^2$ for recipes with higher sugar PDV and lower sugar PDV are roughly the same, and any differences are due to random chance.
+Null Hypothesis: Our model is fair. Its R2 for recipes with higher sugar PDV and lower sugar PDV are roughly the same, and any differences are due to random chance.
 
-Alternative Hypothesis: Our model is unfair. Its $R^2$ for recipes with lower sugar PDV is lower than its precision for recipes with higher sugar PDV.
+Alternative Hypothesis: Our model is unfair. Its R2 for recipes with lower sugar PDV is lower than its precision for recipes with higher sugar PDV.
 
 Test Statistic: Difference in precision (low sugar PDV - high sugar PDV)
 
