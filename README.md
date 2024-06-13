@@ -107,6 +107,19 @@ However, the differences in proportions are quite small. As the chart displays, 
 
 <iframe src="assets/fig_4.html" width="800" height="600" frameborder="0"></iframe>
 
+## Interesting Aggregates
+
+For this section, we wanted to get a broad sense of the distributions and averages of some relevant features. We created a small dataframe called summary to store the mean, standard deviation, min, max, and count of avg_rating, calories (#), total fat (PDV), sugar (PDV, sodium (PDV), and saturated fat (PDV).
+
+We found that the standard deviation for calories and sugar had standard deviations greater than 200, so we must be careful later on and understand that these features might have high variance. Also, for all of the features, there was a non-neglible difference between the mean and median. This means that we must be wary of outliers when doing later analyses and when conducting the predictive model.
+
+-----  ------------  ---------  ----------  ----------  ----------  ----------
+mean       4.62536     429.927     32.6254     68.6644     28.9417     40.2443
+std        0.640763    636.628     60.1488    247.239     144.975      80.9128
+min        1             0          0           0           0           0
+max        5         45609       3464       30260       29338        6875
+count  81173         83782      83782       83782       83782       83782
+-----  ------------  ---------  ----------  ----------  ----------  ----------
 
 
 ## Assessment of Missingness
@@ -236,6 +249,6 @@ Test Statistic: Difference in precision (low sugar PDV - high sugar PDV)
 
 Significance Level: 0.05
 
-
+Before running the test, the observed test statistic was approx. 0.0047. After running the 1000 permutation simulations, we got a p-value of 0.86. Because this is greater than the signifance level of 0.05, we fail to reject the null hypothesis that the model is fair. There is no statistically significant evidence of unfairness between high and low sugar groups.
 
 
