@@ -113,13 +113,7 @@ For this section, we wanted to get a broad sense of the distributions and averag
 
 We found that the standard deviation for calories and sugar had standard deviations greater than 200, so we must be careful later on and understand that these features might have high variance. Also, for all of the features, there was a non-neglible difference between the mean and median. This means that we must be wary of outliers when doing later analyses and when conducting the predictive model.
 
------  ------------  ---------  ----------  ----------  ----------  ----------
-mean       4.62536     429.927     32.6254     68.6644     28.9417     40.2443
-std        0.640763    636.628     60.1488    247.239     144.975      80.9128
-min        1             0          0           0           0           0
-max        5         45609       3464       30260       29338        6875
-count  81173         83782      83782       83782       83782       83782
------  ------------  ---------  ----------  ----------  ----------  ----------
+|        |   avg_rating |   calories (#) |   total fat (PDV) |   sugar (PDV) |   sodium (PDV) |   saturated fat (PDV) |\n|:-------|-------------:|---------------:|------------------:|--------------:|---------------:|----------------------:|\n| mean   |     4.62536  |        430.06  |           32.6254 |       68.6644 |        28.9417 |               40.2443 |\n| median |     5        |        305.5   |           20      |       23      |        14      |               21      |\n| std    |     0.640763 |        636.682 |           60.1488 |      247.239  |       144.975  |               80.9128 |\n| min    |     1        |          0.1   |            0      |        0      |         0      |                0      |\n| max    |     5        |      45609     |         3464      |    30260      |     29338      |             6875      |\n| count  | 81173        |      83756     |        83782      |    83782      |     83782      |            83782      |
 
 
 ## Assessment of Missingness
