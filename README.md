@@ -185,9 +185,9 @@ Is there a difference between the ratings of protein-fulfilling and non-protein-
 
 #### Hypothesis
 
-There is no difference between the population mean rating of protein-fulfilling recipes (`protein (PDV)` ≥100 and the population mean rating of non-protein-fulfilling recipes. 
+There is no difference between the population mean rating of protein-fulfilling recipes `protein (PDV)` ≥100 and the population mean rating of non-protein-fulfilling recipes. 
 
-There is a difference between the population mean rating of protein-fulfilling recipes (`protein (PDV)` <100 and the population mean rating of non-protein-fulfilling recipes. 
+There is a difference between the population mean rating of protein-fulfilling recipes `protein (PDV)` <100 and the population mean rating of non-protein-fulfilling recipes. 
 
 #### Test Statistic
 
