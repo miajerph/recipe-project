@@ -51,7 +51,7 @@ In order to clean the data, we implement the following steps:
 6. Rename the column containing the average rating
 7. Create new columns from the `nutrition` column
 8. Drop the `nutrition` column
-9. Create a new column called `fulfills_protein_DV` with Boolean values. If the value is True, then the protein PDV $\geq100$, and if the value is False, the protein PDV $<100$. This column aims to differentiate recipes that meet or do not meet the reccomended daily value of protein.
+9. Create a new column called `fulfills_protein_DV` with Boolean values. If the value is True, then the protein PDV ≥100, and if the value is False, the protein PDV <100. This column aims to differentiate recipes that meet or do not meet the reccomended daily value of protein.
 10. Reorder the columns so more relevant features are to the left
 
 Ratings for recipes can only be between 1 and 5, so intuitively, ratings of 0 imply a user did not properly rate the recipe. 
@@ -85,7 +85,7 @@ Below is an excerpt of the first 5 rows of the cleaned `recipes_avg_ratings` dat
 
 #### Univariate Analysis
 
-The distribution of protein in the dataset is skewed to the right. Most recipes are 200% of daily value or less. As the PDV of protein increases, the number of recipes decreases. Below is a plot of the distribution of sugar after removing outliers with sugar above 1,000 PDV. 
+The distribution of protein in the dataset is skewed to the right. Most recipes are 200% of daily value or less. As the PDV of protein increases, the number of recipes decreases. Below is a plot of the distribution of protein after removing outliers with protein above 1,000 PDV. 
 
 <iframe src="assets/fig_1.html" width="800" height="600" frameborder="0"></iframe>
 
