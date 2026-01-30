@@ -185,9 +185,9 @@ Is there a difference between the ratings of protein-fulfilling and non-protein-
 
 #### Hypothesis
 
-There is no difference between the population mean rating of protein-fulfilling recipes (`protein (PDV)` $\geq 100$) and the population mean rating of non-protein-fulfilling recipes. 
+There is no difference between the population mean rating of protein-fulfilling recipes (`protein (PDV)` ≥100 and the population mean rating of non-protein-fulfilling recipes. 
 
-There is a difference between the population mean rating of protein-fulfilling recipes (`protein (PDV)` $\geq 100$) and the population mean rating of non-protein-fulfilling recipes. 
+There is a difference between the population mean rating of protein-fulfilling recipes (`protein (PDV)` <100 and the population mean rating of non-protein-fulfilling recipes. 
 
 #### Test Statistic
 
@@ -201,7 +201,7 @@ Absolute value of the difference between the mean rating for protein-fulfilling 
 
 To test our hypothesis, we run a permutation test to see if under the null (which is simulated through shuffling the `fulfills_protein_DV` column), whether the observed absolute mean difference is unlikely to occur under the null, ergo, is there statistically significant evidence in favor of the alternate hypothesis. The observed absolute mean difference between the two groups in the dataset is approximately 0.0031266. 
 
-To run the test, we split the dataset into two groups, one where `fulfills_protein_DV` is true, and the other where it is false. Then, we shuffle the average ratings $n=1000$ times to find the mean differences of the two groups for the thousand simulations. 
+To run the test, we split the dataset into two groups, one where `fulfills_protein_DV` is true, and the other where it is false. Then, we shuffle the average ratings n = 1000 times to find the mean differences of the two groups for the thousand simulations. 
 
 
 Because our p-value of 0.739 is greater than the signifiance level, we fail to reject the null hypothesis. There is no statistially significant evidence to suggest that the absolute mean difference in average ratings between protein-fulfilling and non-protein-fulfilling recipes is difference in the population. Based on this permutation test, and previous bivariate analysis, it does not seem that people rate protein-heavy foods higher or lower than non-protein-heavy foods. 
