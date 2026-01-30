@@ -193,7 +193,7 @@ There is a difference between the population mean rating of protein-fulfilling r
 
 Absolute value of the difference between the mean rating for protein-fulfilling and non-protein fulfilling recipes
 
-`{protein PDV >= 100} - \mu_{protein PDV < 100}`
+$\mu_{\text{protein PDV} \ge 100} - \mu_{\text{protein PDV} < 100}$ 
 
 #### Significance Level
 
