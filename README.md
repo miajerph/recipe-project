@@ -193,7 +193,9 @@ There is a difference between the population mean rating of protein-fulfilling r
 
 Absolute value of the difference between the mean rating for protein-fulfilling and non-protein fulfilling recipes
 
-$$\mu_{\text{protein PDV} \ge 100} - \mu_{\text{protein PDV} < 100}$$
+`μ (protein ≥ 100) − μ (protein < 100)`
+
+$\mu_{\text{protein PDV} \ge 100} - \mu_{\text{protein PDV} < 100}$
 
 #### Significance Level
 
@@ -224,7 +226,7 @@ It would be interesting to try a logarithmic regression on the predictor variabl
 
 Our model is thus a combination of linear regression model on carbohydrates and sugar, a logarithm regression on calories, and a one-hot encoding of fulfills protein. 
 
-Based on the high root mean squared error (0.6403) and a $R^2$ score of almost 0 (0.0003), our baseline model performed extremely poorly. The low $R^2$ indicates that our predictors have low explanatory power. The high RMSE indicates a high error and inaccuracy. We must change the model completely going forward.
+Based on the high root mean squared error (0.6403) and a R2 score of almost 0 (0.0003), our baseline model performed extremely poorly. The low R2 indicates that our predictors have low explanatory power. The high RMSE indicates a high error and inaccuracy. We must change the model completely going forward.
 
 ## Final Model
 
